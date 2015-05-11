@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="dygraph-combined.js"></script>
+</head>
+<body>
+<div id="graphdiv1"
+  style="width:1300px; height:500px;"></div>
+<div id="graphdiv2"
+  style="width:1300px; height:500px;"></div>
+
+
+<script type="text/javascript">
+  g3 = new Dygraph(
+    document.getElementById("graphdiv1"),
+    "trafico_jboss_fia3.log",
+    {
+      rollPeriod: 7,
+      showRangeSelector: true,
+      rangeSelectorHeight: 30,
+      showRoller: true
+    }
+  );
+  
+</script>
+
+
+<script type="text/javascript">
+  g3 = new Dygraph(
+    document.getElementById("graphdiv2"),
+    "trafico_jboss_fia4.log",
+    {
+      rollPeriod: 7,
+      showRangeSelector: true,
+      rangeSelectorHeight: 30,
+      showRoller: true
+    }
+  );
+  
+</script>
+
+</body>
+</html>
